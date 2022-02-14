@@ -1,0 +1,178 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- Navbar start-->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-logo"><img src="./image/Vector Smart Object.png" alt="log-image"></div>
+                <div class="nav-list">
+                    <div class="nav-text"><a class="nav-text" href="#"> HOME</a></div>
+                    <div class="nav-text"><a class="nav-text" href="#"> COLLECTION</a></div>
+                    <div class="nav-text"><a class="nav-text" href="#"> ABOUT</a></div>
+                    <div class="nav-text"><a class="nav-text" href="#"> FAQ</a></div>
+                    <div class="nav-text"><a class="nav-text" href="#"> CONTACT</a></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+    <div>
+        <img class="img-container" src="./image/pexels-tiger.png" alt="section image"></img>
+        <div class="container">
+            <div class="text-image">
+                <div><h2>NEW ARRIVAL</h2></div>
+                <div><h1>PALLER AND WRAP</h1></div>
+                <div class="Lorem"><h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                    dolor. </h4></div>
+                <button class="button button2">SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-img-box">
+                <div class="img_wrapper">
+                    <img class="box-img-1" src="./image/Layer 179.png" alt="img-1">
+                        <span class="box-img-item">
+                    <h1>PALLET</h1>
+                    <button class="button button2">SHOP NOW</button>
+                </span>
+            </div>
+            <div  class="img_wrapper">
+                <img class="box-img-1" src="./image/Layer 180.png" alt="img-1">
+                    <span class="box-img-item">
+                        <h1>WRAP</h1>
+                    <button class="button button2">SHOP NOW</button>
+                </span>
+            </div>
+
+        </div>
+        <div>
+            <h2 class="best-seller">Slideshow Gallery</h2>
+        </div>
+        <div class="main-slider-box">
+            <div class="mySlides">
+                <div class="mySlides_container">
+                <div class="mySlides_wrapper">
+                    <img class="img-44" src="./image/Layer 181.png">
+                    <div class="slider-item-name">Product Name 1</div>
+                </div>
+                <div class="mySlides_wrapper">
+
+                <img class="img-44" src="./image/Layer 181.png">
+                <div class="slider-item-name">Product Name 1</div>
+                </div>
+
+                <div class="mySlides_wrapper">
+
+                <img class="img-44" src="./image/Layer 181.png">
+                <div class="slider-item-name">Product Name 1</div>
+                </div>
+            </div>
+            </div>
+
+            
+
+            <div class="mySlides">
+                <div class="mySlides_container">
+                    <div class="mySlides_wrapper">
+                        <img class="img-44" src="./image/Layer 182.png">
+                        <div class="slider-item-name">Product Name 2</div>
+                    </div>
+                    <div class="mySlides_wrapper">
+    
+                    <img class="img-44" src="./image/Layer 182.png">
+                    <div class="slider-item-name">Product Name 2</div>
+                    </div>
+    
+                    <div class="mySlides_wrapper">
+    
+                    <img class="img-44" src="./image/Layer 182.png">
+                    <div class="slider-item-name">Product Name 2</div>
+                    </div>
+            </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="mySlides_container">
+                    <div class="mySlides_wrapper">
+                        <img class="img-44" src="./image/Layer 183.png">
+                        <div class="slider-item-name">Product Name 3</div>
+                    </div>
+                    <div class="mySlides_wrapper">
+    
+                    <img class="img-44" src="./image/Layer 183.png">
+                    <div class="slider-item-name">Product Name 3</div>
+                    </div>
+    
+                    <div class="mySlides_wrapper">
+    
+                    <img class="img-44" src="./image/Layer 183.png">
+                    <div class="slider-item-name">Product Name 3</div>
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div>
+
+
+
+    </div>
+
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+
+
+</body>
+
+</html>
